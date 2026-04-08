@@ -187,7 +187,8 @@ footer a{color:var(--or);text-decoration:none;}
   .contact-simple{max-width:100% !important;}
 }
 
-.hamburger{display:none;background:none;border:2px solid var(--bx);border-radius:4px;font-size:1.4rem;cursor:pointer;color:var(--bx);padding:.2rem .6rem;line-height:1;}
+.hamburger{display:none;background:none;border:2px solid var(--bx);border-radius:4px;font-size:1.4rem;cursor:pointer;color:var(--bx);padding:.2rem .6rem;line-height:1;transition: transform 0.2s ease;}
+.hamburger:active{transform: scale(0.9);}
 @media(max-width:768px){
   .hamburger{display:block !important;}
   .nav-cta{display:none !important;}
@@ -712,7 +713,8 @@ footer a{color:var(--or);text-decoration:none;}
   </span>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js">
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+<script>
 function toggleMenu(){
   var menu=document.getElementById('navMenu');
   var btn=document.getElementById('hamburger');
